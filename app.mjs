@@ -8,10 +8,16 @@ import { conection } from "./src/utils/dbConection.mjs";
 import "./src/models/category.mjs";
 import "./src/models/product.mjs";
 
+import categoryRoutes from "./src/routes/categoryRoutes.mjs";
+import productRoutes from "./src/routes/productRoutes.mjs";
+
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.use("/categories", categoryRoutes);
+app.use("/products", productRoutes);
 
 (async () => {
   try {
