@@ -4,7 +4,7 @@
   "description": "Prueba tecnica de java pero hecha con node.js ",
   "main": "app.mjs",
   "scripts": {
-    "dev": "node --env-file .env --watch src/app.mjs"
+    "dev": "node --watch app.mjs"
   },
   "author": "Jhoan Sebastian Landazabal Christhian",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "body-parser": "^1.20.3",
     "class-validator": "^0.14.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "nodeapiresttest": "file:",
     "pg": "^8.13.1",
