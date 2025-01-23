@@ -30,7 +30,7 @@ export const deleteCategory = async (req, res) => {
       return res.status(404).json({ error: "Category not found" });
     }
 
-    const products = await category.getProducts();
+    const products = await category.getProdcuts();
     if (products.length > 0) {
       return res
         .status(400)
